@@ -19,12 +19,6 @@
       <header>
         <a href="#" class="logo">Shoe<span>Brand</span></a>
         <nav>
-          <ul>
-            <li><a href="#">Home</a></li>
-            <li><a href="#">Sneakers</a></li>
-            <li><a href="#">Players</a></li>
-          </ul>
-
           <svg
             class="close"
             viewBox="0 0 33 33"
@@ -36,6 +30,12 @@
               fill="black"
             />
           </svg>
+
+          <ul>
+            <li><a href="#">Home</a></li>
+            <li><a href="#">Sneakers</a></li>
+            <li><a href="#">Players</a></li>
+          </ul>
         </nav>
 
         <svg
@@ -100,9 +100,9 @@
     </div>
 
     <script>
-      const menu = document.qyerySelector(".menu");
-      const close = document.qyerySelector(".close");
-      const nav = document.qyerySelector("nav");
+      const menu = document.querySelector(".menu");
+      const close = document.querySelector(".close");
+      const nav = document.querySelector("nav");
 
       menu.addEventListener("click", () => {
         nav.classList.add("open-nav");
